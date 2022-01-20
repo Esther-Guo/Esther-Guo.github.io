@@ -66,9 +66,46 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-C-STL-基本用法总结" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-push报错问题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2022/01/16/C-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/" class="article-date">
+    <a href="/2022/01/20/push%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/" class="article-date">
+  <time datetime="2022-01-20T13:28:58.000Z" itemprop="datePublished">2022-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/01/20/push%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/">解决git push报错问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>本地仓库推送远程时经常出现错误：<code>fatal: unable to access &#39;xxxxxxx&#39;: OpenSSL SSL_connect: Connection was reset in connection to github.com:443</code>。根据目前查到的资料，应该是挂了Clash的问题。虽然每次检查端口号配置都没有发现问题，但只要重新设置一下问题就暂时消失了。<br>这次我勤快一点把配置记录在自己的文章里，方便之后查阅。</p>
+<h3 id="FIX"><a href="#FIX" class="headerlink" title="FIX"></a>FIX</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 查看配置</span><br><span class="line">git config --global http.proxy</span><br><span class="line">git config --global https.proxy</span><br><span class="line">git config --global -l // list all</span><br><span class="line"></span><br><span class="line">// 修改配置（敲这两行就行了~）</span><br><span class="line">git config --global http.proxy 127.0.0.1:7890</span><br><span class="line">git config --global https.proxy 127.0.0.1:7890</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://esther_guo.github.io/2022/01/20/push%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/" data-id="ckyn0scgo00018kw625q9e35k" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-C++-STL-基本用法总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2022/01/16/C++-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/" class="article-date">
   <time datetime="2022-01-16T15:47:46.000Z" itemprop="datePublished">2022-01-16</time>
 </a>
     
@@ -80,7 +117,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2022/01/16/C-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/">C++ STL 基本用法总结</a>
+      <a class="article-title" href="/2022/01/16/C++-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/">C++ STL 基本用法总结</a>
     </h1>
   
 
@@ -102,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://esther_guo.github.io/2022/01/16/C-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/" data-id="ckyhfngnf000068w64da3h2mi" class="article-share-link">Share</a>
+      <a data-url="https://esther_guo.github.io/2022/01/16/C++-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/" data-id="ckyn0scgi00008kw60r005v7i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +217,11 @@
       <ul>
         
           <li>
-            <a href="/2022/01/16/C-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/">C++ STL 基本用法总结</a>
+            <a href="/2022/01/20/push%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/">解决git push报错问题</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/16/C++-STL-%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95%E6%80%BB%E7%BB%93/">C++ STL 基本用法总结</a>
           </li>
         
           <li>
